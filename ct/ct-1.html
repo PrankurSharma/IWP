@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<style>
+	.container{
+		box-sizing: border-box;
+		border: 5px solid red;
+        margin-left: 505px;
+        margin-right: 435px;
+        margin-top: 50px;
+	}
+	body{
+		background-color: #13547a;
+	}
+    .container1 img{
+		box-sizing: border-box;
+		border: 5px solid purple;
+        margin-left: -500px;
+        margin-top: 50px;
+        visibility: hidden;
+        position: absolute;
+        height: 500px;
+        width: 500px;
+	}
+	.container1{
+		background: #13547a;
+		position: relative;
+	}
+	img{
+		position: absolute;
+		visibility: hidden;
+	}
+	h1, h1 img{
+		background: #ffffff;
+		visibility: visible;
+		position: relative;
+	}
+</style>
+<head>
+	<title> Image Mapping </title>
+</head>
+	<script type="text/javascript">
+        let flag=1;
+			function hideElement(obj2){
+			element=document.querySelector(obj2);
+			element.style.visibility = 'hidden';
+			flag = 1;
+		}
+		function showElement(obj1){
+			while(flag===0){
+			hideElement(obj2);
+	}
+          element2=document.querySelector(obj1);
+		  element2.style.visibility = 'visible';
+		  flag = 0;
+		  obj2 = obj1;
+		  	}
+	</script>
+<body>
+<h1 class="container" align="center"> Alphabet Chart
+<img src="Serif-3D-Block-Alphabet.png" alt="Chart" usemap="#workmap" class="img">
+<map name="workmap">
+	<area shape="rect" coords="34,43,110,110" href="#A" onclick="showElement('.A')">
+	<area shape="rect" coords="120,43,180,110" href="#B" onclick="showElement('.B')">
+	<area shape="rect" coords="208,43,280,110" href="#C" onclick="showElement('.C')">
+	<area shape="rect" coords="294,43,365,110" href="#D" onclick="showElement('.D')">
+	<area shape="rect" coords="382,43,445,110" href="#E" onclick="showElement('.E')">
+	<area shape="rect" coords="470,43,530,110" href="#F" onclick="showElement('.F')">
+	<area shape="rect" coords="68,123,142,192" href="#G" onclick="showElement('.G')">
+	<area shape="rect" coords="160,123,225,192" href="#H" onclick="showElement('.H')">
+	<area shape="rect" coords="258,123,300,192" href="#I" onclick="showElement('.I')">
+	<area shape="rect" coords="326,140,355,209" href="#J" onclick="showElement('.J')">
+	<area shape="rect" coords="408,123,475,192" href="#K" onclick="showElement('.K')">
+	<area shape="rect" coords="68,223,132,292" href="#L" onclick="showElement('.L')">
+	<area shape="rect" coords="155,223,235,292" href="#M" onclick="showElement('.M')">
+	<area shape="rect" coords="248,223,318,292" href="#N" onclick="showElement('.N')">
+	<area shape="rect" coords="330,223,401,292" href="#O" onclick="showElement('.O')">
+	<area shape="rect" coords="412,223,478,292" href="#P" onclick="showElement('.P')">
+	<area shape="rect" coords="48,320,120,400" href="#Q" onclick="showElement('.Q')">
+	<area shape="rect" coords="145,320,210,400" href="#R" onclick="showElement('.R')">
+	<area shape="rect" coords="242,320,300,400" href="#S" onclick="showElement('.S')">
+	<area shape="rect" coords="335,320,395,400" href="#T" onclick="showElement('.T')">
+	<area shape="rect" coords="420,320,490,400" href="#U" onclick="showElement('.U')">
+	<area shape="rect" coords="55,420,125,508" href="#V" onclick="showElement('.V')">
+	<area shape="rect" coords="145,420,235,508" href="#W" onclick="showElement('.W')">
+	<area shape="rect" coords="250,420,328,508" href="#X" onclick="showElement('.X')">
+	<area shape="rect" coords="335,420,411,508" href="#Y" onclick="showElement('.Y')">
+	<area shape="rect" coords="428,420,494,508" href="#Z" onclick="showElement('.Z')">
+</map>
+</h1>
+<h1 class="container1" align="center" > Example (Click on the alphabet for it's example.)
+<img src="A.jpg" id="A" class="A" >
+<img src="B.jpg" id="B" class="B" >
+<img src="C.jpg" id="C" class="C" >
+<img src="D.jpg" id="D" class="D" >
+<img src="E.jpg" id="E" class="E" >
+<img src="F.jpg" id="F" class="F" >
+<img src="G.jpg" id="G" class="G" >
+<img src="H.jpg" id="H" class="H" >
+<img src="I.jpg" id="I" class="I" >
+<img src="J.jpg" id="J" class="J" >
+<img src="K.jpg" id="K" class="K" >
+<img src="L.jpg" id="L" class="L" >
+<img src="M.jpg" id="M" class="M" >
+<img src="N.jpg" id="N" class="N" >
+<img src="O.jpg" id="O" class="O" >
+<img src="P.jpg" id="P" class="P" >
+<img src="Q.jpg" id="Q" class="Q" >
+<img src="R.jpg" id="R" class="R" >
+<img src="S.jpg" id="S" class="S" >
+<img src="T.jpg" id="T" class="T" >
+<img src="U.jpg" id="U" class="U" >
+<img src="V.jpg" id="V" class="V" >
+<img src="W.jpg" id="W" class="W" >
+<img src="X.jpg" id="X" class="X" >
+<img src="Y.jpg" id="Y" class="Y" >
+<img src="Z.jpg" id="Z" class="Z" >
+</h1>
+</body>
+</html>
