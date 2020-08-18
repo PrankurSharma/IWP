@@ -1,0 +1,34 @@
+#content {
+	text-align: center;
+	padding-top: 25%;
+	color: white;
+	text-shadow: 0px 4px rgba(0, 0, 0, 0.4), 0px 8px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.4);
+}
+
+body {
+	background: url("https://static.toiimg.com/photo/msid-66348255,width-96,height-65.cms");
+	background-size: cover;
+	background-position: center;
+	font-family: Cantarell;
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 3em;
+}
+
+html {
+	height: 100%;
+}
+
+hr {
+	width: 400px;
+	border-top: 1px solid #f8f8f8;
+	border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+}
+
+a img {
+	height: 30px;
+	width: auto;
+}
+
