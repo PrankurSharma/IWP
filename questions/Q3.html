@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("h1").first().css("background-color", "blue");
+  $("#hide").click(function(){
+    $("h3").hide();
+  });
+  $("#show").click(function(){
+    $("h3").show();
+  });
+
+  $("#btn1").click(function(){
+    $("#img1").before("<i>Text inserted before<i>");
+  });
+
+  $("#btn2").click(function(){
+    $("#img1").after("<i>Text innserted after<i>");
+  });
+
+  $("#b3").click(function(){
+    $("#h32").animate({
+      height: 'toggle'
+    });
+});
+
+    $("#b5").click(function(){
+    $("#h32").css({"background-color": "red", "font-size": "200%"});
+});
+
+$("#b6").click(function(){
+    var text = "";
+    text += "Width of image: " + $("#img1").width() + "</br>";
+    text += "Height of image " + $("#img1").height();
+    $("#p6").html(text);
+  });
+
+  $("#b4").click(function(){
+    $("#div1").fadeToggle();
+    $("#div2").fadeToggle("slow");
+    $("#div3").fadeToggle(5000);
+  });
+  
+});
+</script>
+</head>
+<body>
+    <h1 align="center">Task-3</h1>
+    
+    <h3 id="h31">This is the sample text: Lorem ipsum set minuit.</h3>
+    <p>If you click on the "Hide" button, the text will disappear.</p>
+    <p>Then, if you click the "Show" button, the text will reappear.</p>
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <br><br>
+    <img id ="img1" src="index.jfif" alt="jQuery" width="200" height="80">
+    <br>
+    <button id="btn1">Insert before</button>
+    <button id="btn2">Insert after</button>
+    <br><br>
+    <button id="b6">Display dimensions of image</button>
+    <p id="p6"></p>
+    <br>
+    <h2>Another Sample Text</h2>
+        <button id="b3">Start Animation</button>
+        <br>
+        <h3 id="h32" style="background-color:#00ff00">Lorem ipsum dolor sit amuit avec mi.</h3>
+        <br>
+        <button id="b5">Set multiple styles for h3</button>
+    
+    <p>Demonstrate fadeToggle() with different speed parameters.</p>
+
+<button id="b4">Click to fade in/out boxes</button><br><br>
+
+<div id="div1" style="width:65px;height:65px;background-color:blue;"></div><br>
+<div id="div2" style="width:65px;height:65px;background-color:green;margin-top: 20px;"></div><br>
+<div id="div3" style="width:65px;height:65px;background-color:red;margin-top: 20px;"></div><br>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sending An Email Via HTML Form</title>
+</head>
+<body bgcolor="#edf756">
+<h1 align="center"> Vehicle Servicing Form </h1>
+<div class="container">
+<div>
+</div>
+<table border="3" width="480px" cellpadding="3" cellspacing="4" align="center" bgcolor="#9df9ef">
+	<tr>
+		<td align="center"> Vehicle Number: </td>
+		<td class="text1">
+			<input type="text" style= "width: 300px" name="Vehicle Number">
+		</td>
+	</tr>
+	<tr>
+		<td align="center"> Password </td>
+		<td class="text8">
+			<input type="password" style="width: 300px" name="Password">
+	</tr>
+	<tr>
+		<td align="center"> Type of Vehicle</td>
+		<td class="text9">
+		<label> <input type="checkbox">Bike</label>
+        <label> <input type="checkbox">Car</label>
+        </td>
+	</tr>
+	<tr>
+		<td align="center"> Vehicle Model: </td>
+		<td class="text2">
+			<select style= "width: 300px">
+				<option value="1"> Chevrolet Sail </option>
+				<option value="2" > Honda City </option>
+				<option value="3" > Hyundai Tucson </option>
+				<option value="4"> Maruti Suzuki Swift Dzire </option>
+				<option value="5" > MG Hector Plus </option>
+				<option value="6" > Apache </option>
+				<option value="7" > Bajaj </option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td align="center"> Name Of The Owner: </td>
+		<td class="text3">
+		<input type="text" style= "width: 300px" name="Owner">
+		</td>
+	</tr>
+	<tr>
+		<td align="center"> Owner Email: </td>
+		<td class="text4">
+		<input type="text" style= "width: 300px" name="email">
+		</td>
+	</tr>
+	<tr>
+		<td align="center"> Owner Mobile Number: </td>
+		<td class="text5"> <input type="text" style= "width: 300px" name="phone"> </td>
+	</tr>
+	<tr>
+		<td align="center"> Type Of Service: </td>
+		<td class="text6">
+    <div><input type="radio" name="t" id="a">
+    <label for="a">Rs.1000 Basic Service Plan</label></div>
+    <div><input type="radio" name="t" id="b"> 
+    <label for="b">Rs.3000 Deep Cleaning And Oil Change</label></div>
+    <div><input type="radio" name="t" id="c"> 
+    <label for="c">Rs.10000 Deep Cleaning, Installation 
+				Of Wires, Tightening of all the parts, and Oil Change</label></div>
+		</td>
+	</tr>
+	<tr>
+		<td align="center"> Additional Comments: </td>
+		<td class="text7"> <textarea rows="4" value="comment" cols="35" name="comments"></textarea></td>
+	</tr>
+	</table>
+			<div align="center" style="margin-top: 20px"><input type="submit" style="width: 100px" value="submit"></div>
+			<div align="center" style="margin-top: 40px"><input type="reset" style="width: 100px" value="reset"></div>
+</form>
+</div>
+</body>
+</html>

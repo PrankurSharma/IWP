@@ -1,0 +1,133 @@
+<!-- Form Creation Using Tables-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Creation</title>
+	<script type="text/javascript">
+		function validation(){
+			if( document.myForm.VehicleNo.value == "" ) {
+            alert( "Please provide your Vehicle No.!" );
+            document.myForm.VehicleNo.focus() ;
+            return false;
+         }
+         if(document.myForm.Password.value == ""){
+         	alert("Please provide the password");
+         	document.myForm.Password.focus();
+         	return false;
+         }
+          var checkBox1 = document.getElementById("c1");
+          var checkBox2 = document.getElementById("c2");
+          if(checkBox1.checked == false && checkBox2.checked == false){
+          	alert("Please select vehicle type.");
+          	return false;
+          }
+
+         if(document.myForm.vm.value == "0"){
+         	    alert("Please provide Vehicle Model");
+         		return false;
+         	}
+         if(document.myForm.Owner.value == ""){
+         	alert("Please provide Owner Name!");
+         	document.myForm.Owner.focus();
+         	return false;
+         }
+         if(document.myForm.email.value == ""){
+         	alert("Please provide your email!");
+         	document.myForm.email.focus();
+         	return false;
+         }
+         if(document.myForm.phone.value == ""){
+         	alert("Please provide your phone no.!");
+         	document.myForm.phone.focus();
+         	return false;
+         }
+         if(!document.myForm.t.value == "1" || !document.myForm.t.value == "2" || !document.myForm.t.value == "3"){
+         	alert("Please provide Type of service!");
+         	return false;
+         }
+         else{
+         	return true;
+         }
+         return ( true );
+		}
+	</script>
+</head>
+<body bgcolor="#edf756">
+<h1 align="center"> Vehicle Servicing Form </h1>
+<div class="container">
+<form action="/cgi-bin/test.cgi" id="form1" name="myForm" onsubmit = "return(validation());">
+<div>
+</div>
+<table border="3" width="480px" cellpadding="3" cellspacing="4" align="center" bgcolor="#9df9ef">
+	<tr>
+		<td align="center"> Vehicle Number: </td>
+		<td class="text1">
+			<input type="text" style= "width: 300px" name="VehicleNo">
+		</td>
+	</tr>
+	<tr>
+		<td align="center"> Password </td>
+		<td class="text8">
+			<input type="password" style="width: 300px" name="Password">
+	</tr>
+		<tr>
+		<td align="center"> Type of Vehicle</td>
+		<td class="text9">
+		<label> <input type="checkbox" name="v" value="1" id="c1">Bike</label>
+        <label> <input type="checkbox"name="v"value="2" id="c2">Car</label>
+        </td>
+	</tr>
+	<tr>
+		<td align="center"> Vehicle Model: </td>
+		<td class="text2">
+			<select style= "width: 300px" id="select1" name="vm">
+				<option value="0"> Select </option>
+				<option value="1"> Chevrolet Sail </option>
+				<option value="2" > Honda City </option>
+				<option value="3" > Hyundai Tucson </option>
+				<option value="4"> Maruti Suzuki Swift Dzire </option>
+				<option value="5" > MG Hector Plus </option>
+				<option value="6" > Apache </option>
+				<option value="7" > Bajaj </option>
+			</select>
+		</td>
+	</tr>
+		<tr>
+		<td align="center"> Name Of The Owner: </td>
+		<td class="text3">
+		<input type="text" style= "width: 300px" name="Owner">
+		</td>
+	</tr>
+	<tr>
+		<td align="center"> Owner Email: </td>
+		<td class="text4">
+		<input type="text" style= "width: 300px" name="email">
+		</td>
+	</tr>
+	<tr>
+		<td align="center"> Owner Mobile Number: </td>
+		<td class="text5"> <input type="text" style= "width: 300px" name="phone"> </td>
+	</tr>
+	<tr>
+		<td align="center"> Type Of Service: </td>
+		<td class="text6">
+    <div><input type="radio" name="t" id="a" value="1">
+    <label for="a">Rs.1000 Basic Service Plan</label></div>
+    <div><input type="radio" name="t" id="b" value="2"> 
+    <label for="b">Rs.3000 Deep Cleaning And Oil Change</label></div>
+    <div><input type="radio" name="t" id="c" value="3"> 
+    <label for="c">Rs.10000 Deep Cleaning, Installation 
+				Of Wires, Tightening of all the parts, and Oil Change</label></div>
+		</td>
+	</tr>
+	<tr>
+		<td align="center"> Additional Comments: </td>
+		<td class="text7"> <textarea rows="4" cols="35" name="comments"></textarea></td>
+	</tr>
+	</table>
+			<div align="center" style="margin-top: 20px"><input type="submit" style="width: 100px" value="Submit"></div>
+			<div align="center" style="margin-top: 40px"><input type="reset" style="width: 100px" value="reset"></div>
+</form>
+</div>
+</body>
+</html>
