@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Data Science</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Raleway', sans-serif;
+    }
+    
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    body {
+      font-family: 'Raleway', sans-serif;
+      background-color: #ffffff;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      min-width: 100vh;
+    }
+    
+      #navbar {
+      width: 100vw;
+      background-color: #141414;
+      font-weight: bold;
+    }
+    
+    ul {
+      list-style: none;
+      margin: 0;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 1em 0;
+    }
+    
+    .top a {
+      text-decoration: none;
+      color: white;
+      padding-right: 3em;
+      position: relative;
+      transition: all ease-in-out 260ms;
+    }
+    
+    .top a::after {
+      content: '';
+      position: absolute;
+      display: block;
+      height: 0.4em;
+      width: 0;
+      background-color: #ff4081;
+      bottom: -1em;
+      transition: all ease-in-out 260ms;
+    }
+    
+    .top a:hover::after {
+      width: 60%;
+    }
+    
+    .top a:hover {
+      color: #ff4081;
+      transition: all ease-in-out 260ms;
+    }
+    
+    .top:first-child {
+      margin-right: auto;
+      margin-left: 3em;
+    }
+    
+    .card-horizontal {
+      display:flex;
+      flex: 1 1 auto;
+    }
+    </style>
+</head>
+<body>
+
+<div id="navbar">
+  <ul>
+      <li class="top"><a href="\myfiles\IWP\Landing Page\Landing Page\trailLandPage.html">Learners' Guild</a></li>
+      <li class="top"><a class="rtEl" href="#navbar">Home</a></li>
+      <li class="top"><a class="rtEl" href="DataScience_course_page.html">Course Page</a></li>
+      <li class="top"><a class="rtEl" href="\myfiles\IWP\articles.php">User Articles</a></li>
+      </li>
+  </ul>
+</div>
+  
+<div class="container">
+  <figure>
+    <img src="what_is_datascience.jpg" alt="What is data science"  width="1100" height="400">
+    <figcaption><h3>Data Science is a blend of various tools, algorithms, and machine learning principles with the goal to discover hidden patterns from the raw data.
+      Data Scientist not only does the exploratory analysis to discover insights from it, but also uses various advanced machine learning algorithms to identify the occurrence of a particular event in the future. A Data Scientist will look at the data from many angles, sometimes angles not known earlier.
+      Data Science is a more forward-looking approach, an exploratory way with the focus on analyzing the past or current data and predicting the future outcomes with the aim of making informed decisions. It answers the open-ended questions as to “what” and “how” events occur.
+      </h3>
+    </figcaption>
+  </figure>
+  <br>
+  <br>
+  <h1 style="color:brown" style="align-content: center;"><b><u>Data Science Workflow</u></b></h1><br>
+  <img src="8cd75ffb7c2524686bb9c342ff8490c7.png" alt="flowchart" width="800" height="600" style="align-content: center;">
+
+  <br>
+  <br>
+  <h1 style="color: crimson;"><b><u>A beginner's guide to start learning from scratch</u></b></h1><br>
+ 
+  <br>
+  <br>
+  <div class="card">
+    <div class="card-horizontal">
+        <div class="img-square-wrapper">
+            <img class="" src="stats.png" alt="Card image cap" width="400" height="250">
+        </div>
+        <div class="card-body">
+            <h1>STATISTICS</h1>
+            <h3>Mathematics is one the basic building block for the strong foundations of data science concepts.
+              Starting from vectors, determinants, matrices, mean mode, median, quantiles to linear algebra all these mathematics concepts are important to understand descriptive and inferential statistics.
+              <br>
+              <button class="btn btn-danger navbar-btn" onclick="location.href='https://www.khanacademy.org/math/linear-algebra';">Learn More</button>
+            </h3>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<div class="card">
+  <div class="card-horizontal">
+      <div class="img-square-wrapper">
+          <img class="" src="pythonfordatascience.jpg" alt="Card image cap" width="400" height="250">
+      </div>
+      <div class="card-body">
+          <h1>PYTHON</h1>
+          <h3>There are two tools currently in the market namely R and Python to perform all execution of tasks and play with data.
+             Python is very beginner friendly and easy to learn. It is also very popular among data science communities and python offers enumerous functions which make it easy to derive insights from data.
+            <br>
+            <button class="btn btn-danger navbar-btn" onclick="location.href='https://www.w3schools.com/python/';">Learn More</button>
+            </h3>
+      </div>
+  </div>
+</div>
+<br>
+<br>
+<div class="card">
+  <div class="card-horizontal">
+      <div class="img-square-wrapper">
+          <img class="" src="dataanalysis.jpg" alt="Card image cap" width="400" height="250">
+      </div>
+      <div class="card-body">
+          <h1>DATA ANALYSIS</h1>
+          <h3>Data analysis is a process of inspecting, cleansing, transforming and modeling data with the goal of discovering useful information, informing conclusions and supporting decision-making.
+            Data analysis has multiple facets and approaches, encompassing diverse techniques under a variety of names, and is used in different business, science, and social science domains.
+          <br>
+          <button class="btn btn-danger navbar-btn" onclick="location.href='https://dphi.tech/learn/';">Learn More</button>
+          </h3>
+      </div>
+  </div>
+</div>
+</body>
+</html>

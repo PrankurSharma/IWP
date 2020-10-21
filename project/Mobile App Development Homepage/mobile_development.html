@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Mobile App Development</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Raleway', sans-serif;
+    }
+    
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    body {
+      font-family: 'Raleway', sans-serif;
+      background-color: #ffffff;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      min-width: 100vh;
+    }
+    
+      #navbar {
+      width: 100vw;
+      background-color: #141414;
+      font-weight: bold;
+    }
+    
+    ul {
+      list-style: none;
+      margin: 0;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 1em 0;
+    }
+    
+    .top a {
+      text-decoration: none;
+      color: white;
+      padding-right: 3em;
+      position: relative;
+      transition: all ease-in-out 260ms;
+    }
+    
+    .top a::after {
+      content: '';
+      position: absolute;
+      display: block;
+      height: 0.4em;
+      width: 0;
+      background-color: #ff4081;
+      bottom: -1em;
+      transition: all ease-in-out 260ms;
+    }
+    
+    .top a:hover::after {
+      width: 60%;
+    }
+    
+    .top a:hover {
+      color: #ff4081;
+      transition: all ease-in-out 260ms;
+    }
+    
+    .top:first-child {
+      margin-right: auto;
+      margin-left: 3em;
+    }
+    
+    .card-horizontal {
+      display:flex;
+      flex: 1 1 auto;
+    }
+    </style>
+</head>
+<body>
+
+<div id="navbar">
+  <ul>
+      <li class="top"><a href="\myfiles\IWP\Landing Page\Landing Page\trailLandPage.html">Learners' Guild</a></li>
+      <li class="top"><a class="rtEl" href="#navbar">Home</a></li>
+      <li class="top"><a class="rtEl" href="\myfiles\IWP\Mobile App Development Homepage\Mobile App Development\Android.html">Course Page</a></li>
+      <li class="top"><a class="rtEl" href="\myfiles\IWP\articles.php">User Articles</a></li>
+      </li>
+  </ul>
+</div>
+  
+<div class="container">
+  <figure>
+    <img src="mobile-app-development-technologies.png" alt="What is data science"  width="1100" height="400">
+    <figcaption><h3>Mobile app development is the act or process by which a mobile app is developed for mobile devices, such as personal digital assistants, enterprise digital assistants or mobile phones. These applications can be pre-installed on phones during manufacturing platforms, or delivered as web applications using server-side or client-side processing (e.g., JavaScript) to provide an "application-like" experience within a Web browser. Application software developers also must consider a long array of screen sizes, hardware specifications, and configurations because of intense competition in mobile software and changes within each of the platforms. Mobile app development has been steadily growing, in revenues and jobs created. A 2013 analyst report estimates there are 529,000 direct app economy jobs within the EU then 28 members (including the UK), 60 percent of which are mobile app developers.
+      </h3>
+    </figcaption>
+  </figure>
+  <br>
+  <br>
+  <h1 style="color:brown" style="align-content: center;"><b><u>Mobile Application Development Workflow</u></b></h1><br>
+  <img src="Implementing-Agile-Scrum-in-Your-Mobile-App-Development-Process.jpg" alt="flowchart" width="1000" height="450" style="align-content: center;">
+
+  <br>
+  <br>
+  <h1 style="color: crimson;"><b><u>A beginner's guide to start learning</u></b></h1><br>
+  <!--<button onclick="location.href='https://www.khanacademy.org/math/linear-algebra';"><img src="stats.png" alt="html" width="300" height="300"></button>
+  <button onclick="location.href='https://www.w3schools.com/python/';"><img src="pythonfordatascience.jpg" alt="css" width="300" height="300"></button>
+  <button onclick="location.href='https://dphi.tech/learn/';"><img src="dataanalysis.jpg" alt="js" width="300" height="300"></button>
+  -->
+  <br>
+  <br>
+  <div class="card">
+    <div class="card-horizontal">
+        <div class="img-square-wrapper">
+            <img class="" src="rnjs.jpg" alt="Card image cap" width="400" height="250">
+        </div>
+        <div class="card-body">
+            <h1>REACT NATIVE</h1>
+            <h3>React Native is a JavaScript framework for writing real, natively rendering mobile applications for iOS and Android. It’s based on React, Facebook’s JavaScript library for building user interfaces, but instead of targeting the browser, it targets mobile platforms.</h3>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<div class="card">
+  <div class="card-horizontal">
+      <div class="img-square-wrapper">
+          <img class="" src="flutter.png" alt="Card image cap" width="400" height="250">
+      </div>
+      <div class="card-body">
+          <h1>FLUTTER</h1>
+          <h3>Flutter is a free and open-source mobile UI framework created by Google and released in May 2017. In a few words, it allows you to create a native mobile application with only one codebase. This means that you can use one programming language and one codebase to create two different apps (for iOS and Android).</h3>
+      </div>
+  </div>
+</div>
+<br>
+<br>
+</body>
+</html>
